@@ -1,8 +1,10 @@
 version: '3'
-
 services:
-  elastic:
-    image: nshou/elasticsearch-kibana
+  elasticsearch:
+    image: nshou/elasticsearch-kibana:latest
+    environment:
+      - discovery.type=single-node
     ports:
       - "9200:9200"
       - "5601:5601"
+
