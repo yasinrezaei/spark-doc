@@ -76,5 +76,5 @@ query.awaitTermination()
 ```
 
 
-## `Read Stream From elastic` + see this issue [here]('https://github.com/elastic/elasticsearch-hadoop/issues/1227')
+## `Read Stream From elastic` + see this issue [here](https://github.com/elastic/elasticsearch-hadoop/issues/1227)
 ![image info](./pictures/el.png)
