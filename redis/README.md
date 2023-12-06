@@ -45,7 +45,7 @@ df.show()
 
 ```
 
-## `Write Stream to redis` + see documantation [here]('https://github.com/RedisLabs/spark-redis/tree/master/doc')
+## `Write Stream to redis` + see documantation [here](https://github.com/RedisLabs/spark-redis/tree/master/doc)
 - Java
   ```java
   val query = sensors
