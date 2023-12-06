@@ -87,6 +87,15 @@ df.show()
 #### oracle does not support write stream but we can simulate write stream with `normal write and forEachBatch option`
 
 ```python
+def write_to_oracle(df, epoch_id):
+    df.write.format("jdbc") \
+        .option("url", "jdbc:oracle:thin:@//localhost:49161/xe") \
+        .option("dbtable", "yasin.customer") \
+        .option("user", "yasin") \
+        .option("password", "12345") \
+        .option("isolationLevel", "READ_COMMITTED") \
+        .mode("append") \
+        .save()
 # Read streaming data from socket
 df_stream = spark.readStream\
     .format("socket")\
